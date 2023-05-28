@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: var(--clr-white);
+  background: rgba(33, 60, 71, 255);
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --clr-white: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  background: linear-gradient(
+    to right bottom,
+    rgba(201, 201, 201, 0.6) 1.57%,
+    rgba(196, 196, 196, 0.1) 100%
+  );
+  backdrop-filter: blur(30px);
+  border-radius: 2.7rem;
+  padding: 3rem;
+  width: 40rem;
+}
+
+.login__header {
+  font-family: Iceland;
+  font-size: 4rem;
+  display: inline-block;
+  padding-right: calc(11rem - 8.6rem);
+  margin-bottom: 1rem;
+
+  border-bottom: 1px solid var(--clr-white);
+}
+
+.login__exp {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+
+.login__box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 3rem;
+}
+
+.login__label {
+  font-size: 1.5rem;
+}
+
+.login__input {
+  padding: 1.6rem;
+  border-radius: 7px;
+  backdrop-filter: blur(3rem);
+  -webkit-backdrop-filter: blur(3rem);
+  background: linear-gradient(
+    109deg,
+    rgba(110, 102, 102, 0.2) 1.57%,
+    rgba(35, 33, 33, 0.1) 100%
+  );
+  border: none;
+  font-size: 1.8rem;
+}
+
+.login__input:focus {
+  outline: none;
+}
+
+.login__input::placeholder {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--clr-white);
+  opacity: 0.5;
+}
+
+.login__forgot {
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.login__button {
+  width: 100%;
+  padding: 1.6rem;
+  background-color: #a5d9d0;
+  color: black;
+  font-size: 1.8rem;
+  border-radius: 7px;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+.login__button:hover {
+  cursor: pointer;
+}
+
+.registration {
+  font-weight: 300;
+  text-align: center;
+}
+
+.register:link,
+.register:visited {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+.developer__link:link,
+.developer__link:visited {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 34.375em) {
+  html {
+    font-size: 60%s;
+  }
+}
